@@ -12,6 +12,16 @@ public class Message {
     private Integer id;
 
     private String text;
+    private String tag;
+
+    public Message() {
+
+    }
+
+    public Message(String text, String tag) {
+        this.text = text;
+        this.tag = tag;
+    }
 
     public Integer getId() {
         return id;
@@ -21,12 +31,19 @@ public class Message {
         return id;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public String getText() {
         return text;
     }
 
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String text) {
+        this.tag = tag;
+    }
 }
